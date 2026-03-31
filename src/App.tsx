@@ -752,19 +752,21 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <Nav />
-      <Hero />
-      <Stats />
-      <About />
-      <Services />
-      <Materials />
-      <Stock />
-      <Process />
-      <Gallery />
-      <Reviews />
-      <FAQ />
-      <Areas />
-      <Blog />
-      <Contact />
+      <main>
+        <Hero />
+        <Stats />
+        <About />
+        <Services />
+        <Materials />
+        <Stock />
+        <Process />
+        <Gallery />
+        <Reviews />
+        <FAQ />
+        <Areas />
+        <Blog />
+        <Contact />
+      </main>
       <Footer />
       <BackToTop />
       <MobileCTA />
