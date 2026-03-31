@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 25% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+    --primary: 204 48% 44%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 15% 96%;
+    --secondary-foreground: 215 25% 15%;
+    --muted: 210 15% 96%;
+    --muted-foreground: 215 10% 45%;
+    --accent: 204 48% 44%;
+    --accent-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 204 48% 44%;
+    --radius: 0.375rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    perspective: 1200px;
+  }
+  html { scroll-behavior: smooth; }
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: hsl(204 48% 44% / 0.3); border-radius: 3px; }
+
+/* ── Spring easing (bouncy) ── */
+:root {
+  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --spring-soft: cubic-bezier(0.22, 1.2, 0.36, 1);
+  --smooth: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SCROLL-REVEAL ANIMATIONS (bidirectional, 3D, wild)
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Basic reveal: fly up + rotate in 3D ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(80px) rotateX(8deg) scale(0.95);
+  transform-origin: bottom center;
+  transition: opacity 1s var(--smooth), transform 1.2s var(--spring-soft);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg) scale(1);
+}
+
+/* ── Reveal from left: slide + 3D rotation ── */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-120px) rotateY(12deg) scale(0.9);
+  transform-origin: left center;
+  transition: opacity 1s var(--smooth), transform 1.2s var(--spring);
+}
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0) rotateY(0deg) scale(1);
+}
+
+/* ── Reveal from right: slide + 3D rotation ── */
+.reveal-right {
+  opacity: 0;
+  transform: translateX(120px) rotateY(-12deg) scale(0.9);
+  transform-origin: right center;
+  transition: opacity 1s var(--smooth), transform 1.2s var(--spring);
+}
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0) rotateY(0deg) scale(1);
+}
+
+/* ── Scale burst: zoom from tiny with 3D tilt ── */
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.4) rotateX(15deg) rotateZ(-3deg);
+  transform-origin: center center;
+  transition: opacity 0.8s var(--smooth), transform 1.4s var(--spring);
+}
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1) rotateX(0deg) rotateZ(0deg);
+}
+
+/* ── Reveal from top: drop down with bounce ── */
+.reveal-top {
+  opacity: 0;
+  transform: translateY(-100px) rotateX(-10deg) scale(0.9);
+  transform-origin: top center;
+  transition: opacity 1s var(--smooth), transform 1.3s var(--spring);
+}
+.reveal-top.visible {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg) scale(1);
+}
+
+/* ── Flip in: full 3D card flip ── */
+.reveal-flip {
+  opacity: 0;
+  transform: perspective(800px) rotateY(-90deg) scale(0.8);
+  transform-origin: center center;
+  transition: opacity 0.6s var(--smooth), transform 1.2s var(--spring);
+}
+.reveal-flip.visible {
+  opacity: 1;
+  transform: perspective(800px) rotateY(0deg) scale(1);
+}
+
+/* ── Spiral in: rotate + scale from center ── */
+.reveal-spiral {
+  opacity: 0;
+  transform: scale(0.3) rotate(-180deg);
+  transition: opacity 0.8s var(--smooth), transform 1.5s var(--spring);
+}
+.reveal-spiral.visible {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+/* ── Stagger children: cascade from different directions with spring bounce ── */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(60px) rotateX(8deg) scale(0.9);
+  transform-origin: bottom center;
+  transition: opacity 0.8s var(--smooth), transform 1.1s var(--spring);
+}
+.stagger-children.visible > *:nth-child(1) { transition-delay: 0s; opacity: 1; transform: translateY(0) rotateX(0) scale(1); }
+.stagger-children.visible > *:nth-child(2) { transition-delay: 0.12s; opacity: 1; transform: translateY(0) rotateX(0) scale(1); }
+.stagger-children.visible > *:nth-child(3) { transition-delay: 0.2s; opacity: 1; transform: translateY(0) rotateX(0) scale(1); }
+.stagger-children.visible > *:nth-child(4) { transition-delay: 0.28s; opacity: 1; transform: translateY(0) rotateX(0) scale(1); }
+.stagger-children.visible > *:nth-child(5) { transition-delay: 0.36s; opacity: 1; transform: translateY(0) rotateX(0) scale(1); }
+.stagger-children.visible > *:nth-child(6) { transition-delay: 0.44s; opacity: 1; transform: translateY(0) rotateX(0) scale(1); }
+
+/* ── Wild stagger: each child flies from a different direction ── */
+.stagger-wild > * {
+  opacity: 0;
+  transition: opacity 0.8s var(--smooth), transform 1.2s var(--spring);
+}
+.stagger-wild > *:nth-child(odd) { transform: translateX(-80px) translateY(40px) rotateZ(-5deg) scale(0.85); }
+.stagger-wild > *:nth-child(even) { transform: translateX(80px) translateY(40px) rotateZ(5deg) scale(0.85); }
+.stagger-wild > *:nth-child(3n) { transform: translateY(80px) rotateX(10deg) scale(0.8); }
+.stagger-wild.visible > * { opacity: 1; transform: translateX(0) translateY(0) rotateZ(0deg) rotateX(0deg) scale(1); }
+.stagger-wild.visible > *:nth-child(1) { transition-delay: 0s; }
+.stagger-wild.visible > *:nth-child(2) { transition-delay: 0.1s; }
+.stagger-wild.visible > *:nth-child(3) { transition-delay: 0.18s; }
+.stagger-wild.visible > *:nth-child(4) { transition-delay: 0.26s; }
+.stagger-wild.visible > *:nth-child(5) { transition-delay: 0.34s; }
+.stagger-wild.visible > *:nth-child(6) { transition-delay: 0.42s; }
+
+/* ── Brand accent line (steel blue) ── */
+.brand-line {
+  width: 60px; height: 2px;
+  background: linear-gradient(90deg, hsl(204 48% 44%), hsl(204 40% 52%));
+}
+
+/* ── Gradient text (steel blue) ── */
+.text-gradient {
+  background: linear-gradient(135deg, hsl(204 48% 44%), hsl(204 55% 32%), hsl(204 48% 44%));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+.img-zoom { overflow: hidden; }
+.img-zoom img { transition: transform 0.7s var(--spring-soft); }
+.img-zoom:hover img { transform: scale(1.12) rotate(1deg); }
+
+/* ── Glass nav (light) ── */
+.glass-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   HERO ENTRANCE ANIMATIONS (more dramatic)
+   ══════════════════════════════════════════════════════════════ */
+@keyframes hero-line-grow { from { width: 0; opacity: 0; } to { width: 80px; opacity: 1; } }
+
+@keyframes hero-fade-up {
+  from { opacity: 0; transform: translateY(60px) scale(0.9) rotateX(10deg); }
+  to { opacity: 1; transform: translateY(0) scale(1) rotateX(0deg); }
+}
+
+@keyframes hero-title-in {
+  0% { opacity: 0; transform: translateY(80px) scale(0.7); filter: blur(10px); }
+  60% { opacity: 1; filter: blur(0px); }
+  80% { transform: translateY(-5px) scale(1.02); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0px); }
+}
+
+@keyframes hero-subtitle-in {
+  0% { opacity: 0; transform: translateY(40px); letter-spacing: 0.5em; }
+  100% { opacity: 1; transform: translateY(0); letter-spacing: normal; }
+}
+
+@keyframes hero-btn-in {
+  0% { opacity: 0; transform: translateY(30px) scale(0.8); }
+  70% { transform: translateY(-3px) scale(1.03); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.hero-animate-1 { animation: hero-fade-up 1.2s var(--spring) 0.2s both; }
+.hero-animate-2 { animation: hero-title-in 1.4s var(--spring-soft) 0.5s both; }
+.hero-animate-3 { animation: hero-subtitle-in 1.2s var(--smooth) 0.9s both; }
+.hero-animate-4 { animation: hero-btn-in 1s var(--spring) 1.2s both; }
+.hero-line-animate { animation: hero-line-grow 1.2s var(--smooth) 1.6s both; }
+
+.counter-number { font-variant-numeric: tabular-nums; }
+
+/* ── Floating animation for decorative elements ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-15px) rotate(2deg); }
+  66% { transform: translateY(-8px) rotate(-1deg); }
+}
+.float { animation: float 6s ease-in-out infinite; }
+
+/* ── Pulse glow on brand elements ── */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 hsl(204 48% 44% / 0); }
+  50% { box-shadow: 0 0 25px 5px hsl(204 48% 44% / 0.15); }
+}
+.pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+
+/* ── Auto-scrolling gallery ── */
+@keyframes slide-left { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.auto-scroll { animation: slide-left 40s linear infinite; }
+.auto-scroll:hover { animation-play-state: paused; }
+
+/* ── Card tilt on hover (3D) ── */
+.card-tilt {
+  transition: transform 0.5s var(--spring-soft), box-shadow 0.5s ease;
+}
+.card-tilt:hover {
+  transform: perspective(800px) rotateY(-3deg) rotateX(3deg) translateY(-8px) scale(1.02);
+  box-shadow: 12px 12px 30px rgba(0,0,0,0.08), -4px -4px 15px rgba(0,0,0,0.02);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   MOBILE OPTIMIZATIONS
+   ══════════════════════════════════════════════════════════════ */
+
+/* Reduce 3D animation intensity on mobile */
+@media (max-width: 768px) {
+  .reveal { transform: translateY(40px) scale(0.97); }
+  .reveal-left { transform: translateX(-50px) scale(0.95); }
+  .reveal-right { transform: translateX(50px) scale(0.95); }
+  .reveal-scale { transform: scale(0.6); }
+  .reveal-top { transform: translateY(-50px) scale(0.95); }
+  .reveal-flip { transform: perspective(800px) rotateY(-45deg) scale(0.9); }
+  .reveal-spiral { transform: scale(0.5) rotate(-90deg); }
+  .stagger-wild > *:nth-child(odd) { transform: translateX(-30px) translateY(20px) scale(0.92); }
+  .stagger-wild > *:nth-child(even) { transform: translateX(30px) translateY(20px) scale(0.92); }
+  .stagger-wild > *:nth-child(3n) { transform: translateY(40px) scale(0.9); }
+  .card-tilt:hover { transform: none; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .auto-scroll { animation: none; }
+}
+
+/* ── Back to top button ── */
+.back-to-top {
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s var(--spring);
+  transform: translateY(16px);
+}
+.back-to-top.show {
+  opacity: 1; pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* ── Mobile sticky CTA bar ── */
+.mobile-cta-bar {
+  transform: translateY(100%);
+  transition: transform 0.4s var(--spring-soft);
+}
+.mobile-cta-bar.show {
+  transform: translateY(0);
+}
+
+/* ── Shimmer effect for brand lines ── */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.brand-line-shimmer {
+  width: 60px; height: 2px;
+  background: linear-gradient(90deg, hsl(204 48% 44%), hsl(204 55% 65%), hsl(204 48% 44%), hsl(204 55% 65%), hsl(204 48% 44%));
+  background-size: 200% 100%;
+  animation: shimmer 4s ease-in-out infinite;
+}
+
+/* ── Gradient text shimmer on hover ── */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+.text-gradient-animated {
+  background: linear-gradient(135deg, hsl(204 48% 44%), hsl(204 55% 32%), hsl(204 45% 50%), hsl(204 48% 44%));
+  background-size: 300% 100%;
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  animation: gradient-shift 6s ease-in-out infinite;
+}
+
+/* ── Blog card accent top border ── */
+.blog-card-accent {
+  position: relative;
+  overflow: hidden;
+}
+.blog-card-accent::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, hsl(204 48% 44%), transparent);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.blog-card-accent:hover::before { opacity: 1; }
+
+/* ── Subtle button scale on hover ── */
+.btn-hover { transition: all 0.3s var(--spring-soft); }
+.btn-hover:hover { transform: translateY(-2px) scale(1.02); }
+.btn-hover:active { transform: translateY(0) scale(0.98); }
