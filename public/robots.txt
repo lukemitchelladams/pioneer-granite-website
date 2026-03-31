@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pioneergraniteandquartz.com/sitemap.xml
+Sitemap: https://www.pioneergranitequartz.com/sitemap.xml
