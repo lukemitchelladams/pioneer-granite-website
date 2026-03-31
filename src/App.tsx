@@ -124,7 +124,7 @@ function Hero() {
           <a href="#quote" className="group w-full sm:w-auto px-8 py-4 bg-[#3a7ca5] text-white font-semibold tracking-wide text-sm transition-all duration-300 hover:brightness-110 hover:shadow-[0_0_35px_hsl(204,48%,44%,0.3)] btn-hover text-center">
             <span className="flex items-center justify-center gap-2">SCHEDULE FREE MEASUREMENT<svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></span>
           </a>
-          <a href="tel:3039210490" className="w-full sm:w-auto px-8 py-4 border border-gray-300 text-gray-500 text-sm tracking-wide hover:border-gray-500 hover:text-gray-800 transition-all duration-300 btn-hover text-center">CALL (303) 921-0490</a>
+          <a href="tel:3038567345" className="w-full sm:w-auto px-8 py-4 border border-gray-300 text-gray-500 text-sm tracking-wide hover:border-gray-500 hover:text-gray-800 transition-all duration-300 btn-hover text-center">CALL (303) 856-7345</a>
         </div>
         <div className="hero-line-animate mx-auto mt-14 sm:mt-20 brand-line-shimmer" />
       </div>
@@ -318,7 +318,7 @@ function Stock() {
 /* ================================================================ PROCESS ================================================================ */
 function Process() {
   const steps = [
-    { n: '01', t: 'Free Consultation', d: 'It all starts with a conversation. Call us at (303) 921-0490 or visit our showroom at 3333 S Platte River Dr in Sheridan. We\u2019ll discuss your vision, lifestyle, budget, and timeline. Whether it\u2019s a kitchen remodel, bathroom upgrade, commercial buildout, or fireplace surround \u2014 we\u2019ll walk you through your options and give you a ballpark estimate. There\u2019s never any pressure or obligation. This step typically takes 30\u201360 minutes.', i: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /> },
+    { n: '01', t: 'Free Consultation', d: 'It all starts with a conversation. Call us at (303) 856-7345 or visit our showroom at 3333 S Platte River Dr in Sheridan. We\u2019ll discuss your vision, lifestyle, budget, and timeline. Whether it\u2019s a kitchen remodel, bathroom upgrade, commercial buildout, or fireplace surround \u2014 we\u2019ll walk you through your options and give you a ballpark estimate. There\u2019s never any pressure or obligation. This step typically takes 30\u201360 minutes.', i: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /> },
     { n: '02', t: 'Material Selection', d: 'Visit our showroom to browse our extensive inventory in person \u2014 there\u2019s no substitute for seeing and touching the stone yourself. Compare granite vs. marble vs. quartz vs. quartzite side by side. See our in-stock quartz colors, remnant slabs for budget-friendly projects, and our full sink selection. We\u2019ll help you weigh durability, maintenance, appearance, and cost to find the perfect stone for your space. Take home free samples to see how they look in your lighting. Most customers make their selection in a single visit.', i: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /> },
     { n: '03', t: 'Free In-Home Template', d: 'Our template team comes to your home or jobsite for precise digital measurements \u2014 completely free with no obligation. Using laser-guided technology, every angle, edge, sink cutout, cooktop opening, and seam placement is measured down to 1/16 of an inch to ensure a flawless fit. This process takes about 1\u20132 hours depending on the project size. For commercial projects, we coordinate directly with your contractor, architect, or project manager. The template is then sent to our fabrication team in digital format.', i: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /> },
     { n: '04', t: 'Design Decisions & Edge Profiles', d: 'Now the fun part \u2014 finalize your design. Choose your edge profile from over 10 options: eased, beveled, half bullnose, full bullnose, ogee, dupont, waterfall, mitered, and custom shapes. Decide on backsplash height and integration, sink style (undermount, drop-in, farmhouse), faucet hole placement, and any special details like outlet cutouts or decorative corbels. Our team walks you through every decision with physical samples and 3D visualizations so nothing is overlooked.', i: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /> },
@@ -402,34 +402,130 @@ function Gallery() {
 }
 
 
-/* ================================================================ REVIEWS ================================================================ */
+/* ================================================================ REVIEWS (Google Reviews Widget) ================================================================ */
+function StarRating({ rating, size = 'sm' }: { rating: number; size?: 'sm' | 'lg' }) {
+  const sz = size === 'lg' ? 'w-6 h-6' : 'w-4 h-4';
+  return (
+    <div className="flex gap-0.5">
+      {Array.from({ length: 5 }).map((_, i) => {
+        const fill = Math.min(1, Math.max(0, rating - i));
+        return (
+          <div key={i} className="relative">
+            <svg className={`${sz} text-gray-200`} fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            <div className="absolute inset-0 overflow-hidden" style={{ width: `${fill * 100}%` }}>
+              <svg className={`${sz} text-amber-400`} fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 function Reviews() {
+  const GOOGLE_RATING = 5.0;
+  const GOOGLE_COUNT = 72;
+  const GOOGLE_URL = 'https://share.google/FiwSjlVlLs55f4bP2';
+  const REVIEW_URL = 'https://search.google.com/local/writereview?placeid=ChIJXwlkYj-Ha4cRWpJVwSX0Ejg';
+
   const revs = [
-    { n: 'Scott Rodman', t: 'Pioneer granite and quartz was awesome to work with from start to finish. Esperanza helped us decide on a quartz for our kitchen counters/backsplash that we both loved and that we could afford. The template person was extremely quick and knowledgeable and the install team worked incredibly hard. Highly recommend Pioneer for anyone looking for quality countertops at a fair price.' },
-    { n: 'Olga Bloch', t: 'Pioneer Granite and Quartz were amazing!!! Esperanza was very helpful, patient and thorough in helping me choose the best countertop for my laundry room. Their attention to detail and customer service is unmatched in Denver. The installation was flawless and they cleaned up everything when they were done. I will definitely be using them again for my kitchen remodel.' },
-    { n: 'Mark & Lisa H.', t: 'From the first call to the final installation, the Pioneer team was professional, punctual, and incredibly skilled. Our new granite countertops completely transformed our kitchen. The edges are perfect, the seams are nearly invisible, and the install crew was careful with every piece. Could not be happier with the results. We\u2019ve already recommended them to three neighbors!' },
-    { n: 'Jennifer M.', t: 'We got quotes from five different companies and Pioneer was the best value by far \u2014 not the cheapest, but the best quality for the price. They helped us pick a stunning quartzite that looks like marble but is way more durable. The whole project from first visit to installation took just under three weeks. Their showroom is worth the trip alone.' },
+    { n: 'Scott Rodman', t: 'Pioneer granite and quartz was awesome to work with from start to finish. Esperanza helped us decide on a quartz for our kitchen counters/backsplash that we both loved and that we could afford. The template person was extremely quick and knowledgeable and the install team worked incredibly hard. Highly recommend Pioneer for anyone looking for quality countertops at a fair price.', ago: '2 months ago' },
+    { n: 'Olga Bloch', t: 'Pioneer Granite and Quartz were amazing!!! Esperanza was very helpful, patient and thorough in helping me choose the best countertop for my laundry room. Their attention to detail and customer service is unmatched in Denver. The installation was flawless and they cleaned up everything when they were done. I will definitely be using them again for my kitchen remodel.', ago: '3 months ago' },
+    { n: 'Mark & Lisa H.', t: 'From the first call to the final installation, the Pioneer team was professional, punctual, and incredibly skilled. Our new granite countertops completely transformed our kitchen. The edges are perfect, the seams are nearly invisible, and the install crew was careful with every piece. Could not be happier with the results. We\u2019ve already recommended them to three neighbors!', ago: '4 months ago' },
+    { n: 'Jennifer M.', t: 'We got quotes from five different companies and Pioneer was the best value by far \u2014 not the cheapest, but the best quality for the price. They helped us pick a stunning quartzite that looks like marble but is way more durable. The whole project from first visit to installation took just under three weeks. Their showroom is worth the trip alone.', ago: '5 months ago' },
+    { n: 'David R.', t: 'Incredible experience from start to finish. We were nervous about spending this much on countertops but Pioneer made it easy. The showroom is gorgeous and the staff really knows their stuff. Our quartzite kitchen counters are absolutely stunning and the installation was flawless. Worth every penny.', ago: '6 months ago' },
+    { n: 'Maria S.', t: 'Second time using Pioneer and they knocked it out of the park again. First time was our kitchen, this time our master bath. Esperanza remembered us and helped pick the perfect marble. The seam work is unbelievable \u2014 you literally cannot find them. These guys are the real deal.', ago: '7 months ago' },
+  ];
+
+  const [visibleCount, setVisibleCount] = useState(4);
+
+  /* Rating bar breakdown (5 star dominant) */
+  const bars = [
+    { stars: 5, pct: 94 },
+    { stars: 4, pct: 4 },
+    { stars: 3, pct: 1 },
+    { stars: 2, pct: 1 },
+    { stars: 1, pct: 0 },
   ];
 
   return (
     <section id="reviews" className="relative py-20 sm:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-20 reveal">
-          <span className="text-xs tracking-[0.3em] uppercase text-[#3a7ca5]">Customer Love</span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light mt-4 mb-4 text-gray-900">What People <span className="text-gradient">Say</span></h2>
+        <div className="text-center mb-12 sm:mb-16 reveal">
+          <span className="text-xs tracking-[0.3em] uppercase text-[#3a7ca5]">Verified Reviews</span>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mt-4 mb-4 text-gray-900">What People <span className="text-gradient">Say</span></h2>
           <div className="brand-line-shimmer mx-auto" />
         </div>
-        <div className="grid md:grid-cols-2 gap-8 stagger-wild">
-          {revs.map((r) => (
-            <div key={r.n} className="relative p-8 bg-white border border-gray-200 hover:border-[#3a7ca5]/30 transition-all duration-500 group hover:shadow-lg card-tilt">
-              <div className="absolute top-6 right-6 text-6xl font-display text-gray-100 leading-none group-hover:text-[#3a7ca5]/10 transition-colors">&ldquo;</div>
-              <div className="flex gap-1 mb-6">{Array.from({ length: 5 }).map((_, i) => <svg key={i} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>)}</div>
-              <p className="text-gray-500 leading-relaxed mb-6 text-sm">{r.t}</p>
-              <div className="flex items-center gap-3"><div className="w-10 h-10 bg-[#3a7ca5]/10 flex items-center justify-center text-[#3a7ca5] font-display text-lg">{r.n[0]}</div><span className="text-sm text-gray-600">{r.n}</span></div>
+
+        {/* ── Google Rating Summary Card ── */}
+        <div className="reveal mb-12 sm:mb-16">
+          <a href={GOOGLE_URL} target="_blank" rel="noopener noreferrer" className="block max-w-3xl mx-auto">
+            <div className="border border-gray-200 bg-white p-6 sm:p-8 hover:shadow-lg hover:border-[#3a7ca5]/20 transition-all duration-500">
+              <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
+                {/* Left: Google logo + overall rating */}
+                <div className="flex flex-col items-center text-center flex-shrink-0">
+                  <div className="flex items-center gap-2 mb-3">
+                    <svg className="w-7 h-7" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                    <span className="text-xs tracking-[0.15em] uppercase text-gray-400 font-medium">Google Reviews</span>
+                  </div>
+                  <span className="text-5xl sm:text-6xl font-display font-light text-gray-900">{GOOGLE_RATING}</span>
+                  <StarRating rating={GOOGLE_RATING} size="lg" />
+                  <span className="text-sm text-gray-400 mt-2">{GOOGLE_COUNT} reviews</span>
+                </div>
+
+                {/* Right: Rating breakdown bars */}
+                <div className="flex-1 w-full space-y-1.5">
+                  {bars.map((b) => (
+                    <div key={b.stars} className="flex items-center gap-3">
+                      <span className="text-xs text-gray-400 w-3 text-right">{b.stars}</span>
+                      <svg className="w-3 h-3 text-amber-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                      <div className="flex-1 h-2 bg-gray-100 overflow-hidden">
+                        <div className="h-full bg-amber-400 transition-all duration-1000" style={{ width: `${b.pct}%` }} />
+                      </div>
+                      <span className="text-xs text-gray-300 w-8">{b.pct}%</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        {/* ── Review Cards ── */}
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 stagger-wild">
+          {revs.slice(0, visibleCount).map((r) => (
+            <div key={r.n} className="relative p-6 sm:p-8 bg-white border border-gray-200 hover:border-[#3a7ca5]/30 transition-all duration-500 group hover:shadow-lg card-tilt">
+              <div className="absolute top-5 right-6 text-5xl font-display text-gray-100 leading-none group-hover:text-[#3a7ca5]/10 transition-colors">&ldquo;</div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-[#3a7ca5]/10 flex items-center justify-center text-[#3a7ca5] font-display text-lg">{r.n[0]}</div>
+                <div>
+                  <span className="text-sm font-medium text-gray-800 block">{r.n}</span>
+                  <span className="text-xs text-gray-400">{r.ago}</span>
+                </div>
+                <svg className="w-5 h-5 ml-auto flex-shrink-0" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+              </div>
+              <StarRating rating={5} />
+              <p className="text-gray-500 leading-relaxed mt-4 text-sm">{r.t}</p>
             </div>
           ))}
         </div>
-        <div className="mt-12 text-center reveal"><a href="https://www.google.com/maps/place/Pioneer+Granite+and+Quartz/" target="_blank" rel="noopener noreferrer" className="text-sm text-[#3a7ca5] hover:text-[#5092b8] transition-colors tracking-wide">See All Reviews on Google &rarr;</a></div>
+
+        {/* ── Show More / Leave Review CTAs ── */}
+        <div className="mt-10 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 reveal">
+          {visibleCount < revs.length && (
+            <button onClick={() => setVisibleCount(revs.length)} className="px-6 py-3 border border-gray-300 text-sm text-gray-500 hover:border-gray-500 hover:text-gray-800 transition-all duration-300 btn-hover">
+              Show More Reviews
+            </button>
+          )}
+          <a href={GOOGLE_URL} target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-gray-300 text-sm text-gray-500 hover:border-gray-500 hover:text-gray-800 transition-all duration-300 btn-hover flex items-center gap-2">
+            <svg className="w-4 h-4" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            See All {GOOGLE_COUNT} Reviews on Google
+          </a>
+          <a href={REVIEW_URL} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-[#3a7ca5] text-white text-sm font-semibold tracking-wide hover:brightness-110 transition-all duration-300 hover:shadow-[0_0_25px_hsl(204,48%,44%,0.25)] btn-hover flex items-center gap-2">
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+            Leave a Review
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -440,7 +536,7 @@ function Reviews() {
 function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   const faqs = [
-    { q: 'How much do granite countertops cost?', a: 'Granite countertop pricing depends on several factors: the specific slab you choose (exotic granites cost more than common colors), the square footage of your project, edge profile complexity, number of cutouts (sinks, cooktops), and whether you need removal of existing countertops. At Pioneer, most granite kitchen projects range from $2,500 to $6,000+ installed. We provide free estimates after your showroom visit \u2014 call (303) 921-0490 to schedule.' },
+    { q: 'How much do granite countertops cost?', a: 'Granite countertop pricing depends on several factors: the specific slab you choose (exotic granites cost more than common colors), the square footage of your project, edge profile complexity, number of cutouts (sinks, cooktops), and whether you need removal of existing countertops. At Pioneer, most granite kitchen projects range from $2,500 to $6,000+ installed. We provide free estimates after your showroom visit \u2014 call (303) 856-7345 to schedule.' },
     { q: 'What\u2019s the difference between granite and quartz?', a: 'Granite is a natural stone quarried from the earth \u2014 each slab is one-of-a-kind with unique patterns and colors. It\u2019s heat-resistant and incredibly durable but needs to be sealed once a year. Quartz is an engineered stone (90\u201394% ground quartz + resins) that offers precise color matching, is non-porous (never needs sealing), and is antimicrobial. Granite wins on natural beauty and heat resistance; quartz wins on consistency and zero maintenance. Both last a lifetime. Visit our showroom to compare them side by side.' },
     { q: 'How long does the whole process take from start to finish?', a: 'Most residential projects take 2\u20133 weeks from your first showroom visit to completed installation. Here\u2019s the typical breakdown: showroom visit and material selection (1 day), template/measurement (scheduled within 3\u20135 business days), fabrication (5\u20137 business days), and installation (2\u20134 hours). Commercial projects and large-scale jobs may take longer depending on scope. We\u2019ll give you a clear timeline during your consultation.' },
     { q: 'Do you offer free estimates and measurements?', a: 'Yes! Your initial showroom consultation is completely free, and our in-home template measurement is also free with no obligation. We\u2019ll give you a detailed written estimate after seeing your space. There\u2019s never any pressure \u2014 take your time deciding.' },
@@ -449,7 +545,7 @@ function FAQ() {
     { q: 'What edge profiles do you offer?', a: 'We offer over 10 edge profiles: eased (straight), beveled, half bullnose, full bullnose, ogee, dupont, waterfall, mitered (for a thick slab look), pencil round, and custom profiles. Each edge changes the look and feel of your countertop dramatically. Visit our showroom to see and feel physical edge samples before deciding.' },
     { q: 'How do I care for my granite countertops?', a: 'Granite is low-maintenance: clean daily with mild dish soap and warm water or a granite-specific cleaner. Avoid harsh chemicals, bleach, and vinegar. Seal your granite once a year (a simple 15-minute process \u2014 we\u2019ll show you how). Blot spills quickly rather than wiping. With proper care, granite countertops will look beautiful for decades.' },
     { q: 'Do you sell remnant slabs?', a: 'Yes! We keep a rotating inventory of remnant slabs \u2014 smaller pieces left over from previous projects \u2014 at great prices. Remnants are perfect for bathroom vanities, bar tops, laundry room counters, desk tops, and other smaller surfaces. Availability changes frequently, so visit our showroom or call to ask what\u2019s currently in stock.' },
-    { q: 'Can I visit your showroom without an appointment?', a: 'Yes, walk-ins are welcome during business hours (Monday\u2013Friday, 8:30 AM \u2013 4:30 PM). Saturday visits are available by appointment. However, if you\u2019d like dedicated one-on-one time with a team member, we recommend calling ahead at (303) 921-0490 to schedule. Our showroom is located at 3333 S Platte River Dr, Sheridan, CO 80110.' },
+    { q: 'Can I visit your showroom without an appointment?', a: 'Yes, walk-ins are welcome during business hours (Monday\u2013Friday, 8:30 AM \u2013 4:30 PM). Saturday visits are available by appointment. However, if you\u2019d like dedicated one-on-one time with a team member, we recommend calling ahead at (303) 856-7345 to schedule. Our showroom is located at 3333 S Platte River Dr, Sheridan, CO 80110.' },
   ];
 
   return (
@@ -551,7 +647,7 @@ function Contact() {
           <span className="text-xs tracking-[0.3em] uppercase text-[#5092b8]">Let&apos;s Get Started</span>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light mt-4 mb-4 text-white">Get Your Free Quote</h2>
           <div className="w-[60px] h-[2px] mx-auto bg-[#3a7ca5]/60" />
-          <p className="text-white/50 max-w-xl mx-auto mt-6">Ready to transform your space? Fill out the form below, give us a call at (303) 921-0490, or stop by our showroom in Sheridan. We respond to all inquiries within one business day.</p>
+          <p className="text-white/50 max-w-xl mx-auto mt-6">Ready to transform your space? Fill out the form below, give us a call at (303) 856-7345, or stop by our showroom in Sheridan. We respond to all inquiries within one business day.</p>
         </div>
         <div className="grid lg:grid-cols-5 gap-16">
           <div className="lg:col-span-3 reveal-left">
@@ -589,7 +685,7 @@ function Contact() {
           </div>
           <div className="lg:col-span-2 reveal-right space-y-8">
             <div><h3 className="font-display text-xl mb-4 text-white">Visit Our Showroom</h3><div className="flex items-start gap-3"><svg className="w-5 h-5 text-[#5092b8] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg><div className="text-white/60 text-sm"><p className="text-white/80 font-medium">Pioneer Granite &amp; Quartz</p><p>3333 S Platte River Dr</p><p>Sheridan, CO 80110</p><p className="mt-1 text-[#5092b8]">Walk-ins welcome during business hours</p></div></div></div>
-            <div><h3 className="font-display text-xl mb-4 text-white">Call Us</h3><div className="space-y-2"><a href="tel:3039210490" className="flex items-center gap-3 group"><svg className="w-5 h-5 text-[#5092b8]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg><span className="text-white/60 text-sm group-hover:text-white transition-colors">(303) 921-0490</span></a></div></div>
+            <div><h3 className="font-display text-xl mb-4 text-white">Call Us</h3><div className="space-y-2"><a href="tel:3038567345" className="flex items-center gap-3 group"><svg className="w-5 h-5 text-[#5092b8]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg><span className="text-white/60 text-sm group-hover:text-white transition-colors">(303) 856-7345</span></a></div></div>
             <div><h3 className="font-display text-xl mb-4 text-white">Email</h3><a href="mailto:info@pioneergraniteandquartz.com" className="flex items-center gap-3 group"><svg className="w-5 h-5 text-[#5092b8]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg><span className="text-white/60 text-sm group-hover:text-white transition-colors">info@pioneergraniteandquartz.com</span></a></div>
             <div><h3 className="font-display text-xl mb-4 text-white">Hours</h3><div className="text-white/60 text-sm space-y-1"><p>Monday &ndash; Friday: 8:30 AM &ndash; 4:30 PM</p><p>Saturday: By Appointment</p><p>Sunday: Closed</p></div></div>
             <div><h3 className="font-display text-xl mb-4 text-white">Follow Us</h3><div className="flex gap-4">{[{h:'https://www.facebook.com/PioneerGraniteQuartz',i:<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>},{h:'https://www.instagram.com/pioneergraniteandquartz',i:<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>},{h:'https://www.youtube.com/channel/UCT-pQa7sFRRAu6CKf9lTLXA',i:<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>}].map(s => <a key={s.h} href={s.h} target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/15 flex items-center justify-center hover:border-[#5092b8] hover:text-[#5092b8] transition-all text-white/50"><svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">{s.i}</svg></a>)}</div></div>
@@ -614,7 +710,7 @@ function Footer() {
         </div>
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-white/20">&copy; {new Date().getFullYear()} Pioneer Granite and Quartz. All rights reserved.</p>
-          <p className="text-xs text-white/20">3333 S Platte River Dr, Sheridan, CO 80110 &middot; (303) 921-0490 &middot; info@pioneergraniteandquartz.com</p>
+          <p className="text-xs text-white/20">3333 S Platte River Dr, Sheridan, CO 80110 &middot; (303) 856-7345 &middot; info@pioneergraniteandquartz.com</p>
         </div>
       </div>
     </footer>
@@ -643,7 +739,7 @@ function MobileCTA() {
     <div className={`fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-white border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] px-4 py-3 mobile-cta-bar ${y > 400 ? 'show' : ''}`}>
       <div className="flex gap-3">
         <a href="#quote" className="flex-1 py-3 bg-[#3a7ca5] text-white text-sm font-semibold tracking-wide text-center btn-hover">FREE QUOTE</a>
-        <a href="tel:3039210490" className="flex-1 py-3 border border-gray-300 text-gray-600 text-sm font-medium text-center btn-hover">CALL NOW</a>
+        <a href="tel:3038567345" className="flex-1 py-3 border border-gray-300 text-gray-600 text-sm font-medium text-center btn-hover">CALL NOW</a>
       </div>
     </div>
   );
